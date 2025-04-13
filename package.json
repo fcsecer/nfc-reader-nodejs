@@ -1,0 +1,47 @@
+{
+  "name": "nfc-reader-nodejs",
+  "version": "0.1.0",
+  "description": "A native Node.js addon for interacting with PC/SC smart card readers (NFC/contact). Provides low-level access via APDU commands.",
+  "main": "index.js",
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcsecer/nfc-reader-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fcsecer/nfc-reader-nodejs/issues"
+  },
+  "homepage": "https://github.com/fcsecer/nfc-reader-nodejs#readme",
+  "keywords": [
+    "nfc",
+    "pcsc",
+    "smartcard",
+    "reader",
+    "apdu",
+    "winscard",
+    "pcsclite",
+    "node-addon",
+    "native",
+    "addon",
+    "bindings",
+    "nodejs"
+  ],
+  "author": "Fahri Can Seçer",
+  "license": "MIT",
+  "gypfile": true,
+  "os": [
+    "win32",
+    "win64",
+    "linux",
+    "darwin"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^6.0.0"
+  }
+}
