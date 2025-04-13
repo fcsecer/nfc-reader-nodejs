@@ -1,10 +1,10 @@
 {
   "name": "nfc-reader-nodejs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A native Node.js addon for interacting with PC/SC smart card readers (NFC/contact). Provides low-level access via APDU commands.",
   "main": "index.js",
   "scripts": {
-    "install": "node-gyp rebuild"
+    "install": "node-gyp rebuild --verbose"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,10 @@
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "bindings": "^1.5.0",
-    "node-addon-api": "^6.0.0"
+    "bindings": "^1.5.0"
+  },
+  "devDependencies": {
+    "node-addon-api": "^8.3.1",
+    "node-gyp": "^11.2.0"
   }
 }
